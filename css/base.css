@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #31708e;
+  --secondary-color: #3498db;
+  --background-color: #f7f9fb;
+  --text-color-light: #ffffff;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
