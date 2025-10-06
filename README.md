@@ -11,7 +11,6 @@
 - [🤔 Justificativa das Escolhas](#-justificativa-das-escolhas)
 - [⚙️ Como Executar o Projeto](#️-como-executar-o-projeto)
 - [🤝 Colaboração com IA](#-colaboração-com-ia)
-- [👨‍💻 Autor](#-autor)
 
 ## 📖 Sobre o Projeto
 
