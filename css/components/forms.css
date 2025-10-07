@@ -68,3 +68,22 @@
   font-weight: 600;
   min-height: 24px;
 }
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 40px !important;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
