@@ -3,6 +3,20 @@ import { renderProfilePage } from "./profile.js";
 
 const ROOT = document.getElementById("app-root");
 
+function addPasswordToggleLogic() {
+  const passwordInput = document.getElementById("password");
+  const toggle = document.querySelector(".password-toggle");
+
+  if (passwordInput && toggle) {
+    toggle.addEventListener("click", () => {
+      const type =
+        passwordInput.getAttribute("type") === "password" ? "text" : "password";
+      passwordInput.setAttribute("type", type);
+      toggle.textContent = type === "password" ? "👁️" : "🙈";
+    });
+  }
+}
+
 export function renderLogin() {
   ROOT.innerHTML = `
     <form id="login-form"> 
@@ -15,7 +29,10 @@ export function renderLogin() {
             <input type="text" placeholder="Enter Email" name="email" id="email" required />
 
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" id="password" required />
+            <div class="password-wrapper">
+                <input type="password" placeholder="Enter Password" name="password" id="password" />
+                <span class="password-toggle">👁️</span>
+            </div>
             <hr />
             
             <div id="message-area" class="message-area"></div>
@@ -32,6 +49,8 @@ export function renderLogin() {
     e.preventDefault();
     renderRegister();
   });
+
+  addPasswordToggleLogic();
 }
 
 export function renderRegister() {
@@ -49,7 +68,10 @@ export function renderRegister() {
             <input type="text" placeholder="Enter Email" name="email" id="email" required />
 
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" id="password" required />
+            <div class="password-wrapper">
+                <input type="password" placeholder="Enter Password" name="password" id="password" required />
+                <span class="password-toggle">👁️</span>
+            </div>
             <hr />
 
             <div id="message-area" class="message-area"></div>
@@ -69,6 +91,8 @@ export function renderRegister() {
     e.preventDefault();
     renderLogin();
   });
+
+  addPasswordToggleLogic();
 }
 
 async function handleLogin(event) {
