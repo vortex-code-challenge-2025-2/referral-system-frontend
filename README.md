@@ -65,9 +65,9 @@ Siga os passos abaixo para rodar a interface em seu ambiente local.
 
 Conforme incentivado pelo edital, utilizei o **Gemini 2.5 pro(Google)** como uma ferramenta de colaboração e mentoria ao longo do desenvolvimento deste projeto. A interação ocorreu nas seguintes áreas:
 
--   **Code Review:** revisão do código constante, identificando bugs (como a inconsistência de nomes de campos e a validação de formulários) e sugerindo as melhores práticas para corrigi-los.
+-   **Code Review:** revisão do código constante, identificando bugs (como a inconsistência de nomes de campos e a validação de formulários), sugerindo as melhores práticas para corrigi-los, boas práticas, etc.
 -   **Interface:** discutimos a respeito da paleta de cores que a aplicação iria ser construída. A partir disso, determinei os tons pensados como variáveis globais no css.
--   **Construção do `README.md`:** A área em questão é autoexplicativa. O modelo me auxiliou na construção de um README.md harmônico e ao mesmo tempo bem explicativo.
+-   **Construção do `README.md`:** A área em questão é autoexplicativa. O modelo me auxiliou na construção de um README.md harmônico e agradável.
 
 ## 👨‍💻 Autor
 
